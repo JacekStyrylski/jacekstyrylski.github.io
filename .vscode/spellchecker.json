@@ -3,7 +3,9 @@
     "ignoreWordsList": [
         "blog",
         "structurize",
-        "GitHub"
+        "GitHub",
+        "Blog",
+        "Jkyll"
     ],
     "documentTypes": [
         "markdown",

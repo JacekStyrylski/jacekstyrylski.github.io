@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog on GitHub
-date: 2017-02-23
+date: 2017-02-23 21:41
 ---
 Recently I've decided to set up a new blog, so I needed to decide where to host it so it will fits me best.
 
