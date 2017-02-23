@@ -13,7 +13,7 @@ what seems to be pretty interesting taking into how simple it is to write new po
 
 ## Typescript example
 
-```Typescript
+```typescript
 @suite class DefaultDeleteTest {
     private static server: BetterVotingServer;
 
