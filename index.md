@@ -1,3 +1,3 @@
 ## Welcome to Jacek's Styrylski blog
 
-[Welcome post](/_posts/hello-post.md)
+[Welcome post]({{ site.baseurl }}{% link _posts/hello-post.md %})
