@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 I've started journey with Computer Science, back in the 1990s with Commodore 64,
-these days I was just a kid, happy to play some games :neckbeard: . Some time later I've got my first PC,
+these days I was just a kid, happy to play some games. Some time later I've got my first PC,
 it was equipped with Intel DX4 486 microprocessor, soon after I've started to manipulate with
 autoexec.bat and config.sys to get a little bit more conventional memory. Since than I'm constantly
 learning more about computers and I hope that this process will never end.
