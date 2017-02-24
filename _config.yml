@@ -7,13 +7,13 @@ description: "I’m a Software Developer who is enthusiastic about IT in any for
 #baseurl: "/startbootstrap-clean-blog-jekyll"
 url: http://jacekstyrylski.github.io
 twitter_username: JStyrylski
-github_username:  henioStraszny
+github_username: henioStraszny
 #facebook_username:  StartBootstrap
-email_username:  jacek.styrylski@gmail.com
+email_username: jacek.styrylski@gmail.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-92553181-1
 
 # Build settings
 markdown: kramdown
