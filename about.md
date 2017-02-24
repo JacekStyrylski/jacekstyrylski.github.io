@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about/+
+header-img: "img/road.jpg"
 ---
 
 I've started journey with Computer Science, back in the 1990s with Commodore 64,
