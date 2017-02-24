@@ -62,6 +62,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span: false
 highlighter: rouge
 theme: minima
 # # Jekyll 3 now only supports Kramdown for Markdown

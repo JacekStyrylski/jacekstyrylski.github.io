@@ -13,7 +13,7 @@ what seems to be pretty interesting taking into how simple it is to write new po
 
 ## Typescript example
 
-```typescript
+``` ts
 @suite class DefaultDeleteTest {
     private static server: BetterVotingServer;
 
@@ -22,6 +22,14 @@ what seems to be pretty interesting taking into how simple it is to write new po
         chai.use(chaiHttp);
     }
 }
+```
+
+``` javascript
+    var server = 10;
+
+    for(int i = 0; i< 10; i++){
+        server += 10;
+    }
 ```
 
 ## GitHub Pages tutorial
