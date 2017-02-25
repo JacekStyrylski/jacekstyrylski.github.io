@@ -9,7 +9,8 @@
         "Yaml",
         "favicon",
         "favicons",
-        "Favicon"
+        "Favicon",
+        "OSMC"
     ],
     "documentTypes": [
         "markdown",
