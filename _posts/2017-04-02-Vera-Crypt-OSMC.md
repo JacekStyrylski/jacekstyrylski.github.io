@@ -57,9 +57,9 @@ There are two ways of creating encrypted containers using VeraCrypt:
 
 There is useful help command:
 
-    ```bash
-    veracrypt --help
-    ```
+```bash
+veracrypt --help
+```
 
 ## Volume within a file
 
