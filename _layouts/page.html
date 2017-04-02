@@ -10,7 +10,11 @@ layout: default
                 <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
+                    {% if page.description %}
                     <span class="subheading">{{ page.description }}</span>
+                    {% else %}
+                    <span class="subheading">{{ site.description }}</span>
+                    {% endif %}
                 </div>
             </div>
         </div>
