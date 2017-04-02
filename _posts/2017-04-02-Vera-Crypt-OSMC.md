@@ -12,7 +12,6 @@ This tutorial will focus on command line usage based on Raspberry 3 with OSMC di
 Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracrypt-debianwindows/)
 
 1. Download:
-
 The newest version might be found here: [VeraCrypt - Downloads](https://veracrypt.codeplex.com/wikipage?title=Downloads)
 
 ```bash
@@ -23,15 +22,12 @@ wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt
 ```
 
 2. Extract:
-
 ```bash
 tar -vxjf ./veracrypt-1.19-raspbian-setup.tar.bz2
 chmod +x veracrypt-1.19-setup-*
 ./veracrypt-1.19-setup-console-armv7
 ```
-
 3. Install:
-
 ```bash
 ./veracrypt-1.19-setup-console-armv7
 ```
@@ -60,7 +56,7 @@ There is useful help command:
 veracrypt --help
 ```
 
-### Volume within a file
+## Volume within a file
 
 Follow these steps:
 
@@ -100,13 +96,13 @@ veracrypt /media/storage/new-volume /media/vera-test
     3. Press 'enter'
     4. Press 'enter'
 
-That's it, your volume should be visible in '/media/vera-test'
+That's it, your volume should be visible in `/media/vera-test`
 
-### Encrypting complete parition/disk
+## Encrypting complete parition/disk
 
 If you need to encrypt entire drive, the only difference is that in step 2.2 instead of file name `/media/storage/new-volume` you need to put device like that `/dev/sda`
 
-### Dismounting volume
+## Dismounting volume
 
 After you stopped using encrypted volume, you should dismount it:
 
