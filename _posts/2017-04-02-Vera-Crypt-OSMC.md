@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vera Crypt on OSMC
+title: VeraCrypt on OSMC
 subtitle: VeraCrypt is an industry standard disk encryption. This tutorial will focus on command line usage based on Raspberry 3 with OSMC distribution.
 ---
 If you'd like to use it with gui, there are some good tutorials on how to use it with GUI, for example this one:
