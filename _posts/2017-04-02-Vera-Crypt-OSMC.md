@@ -12,13 +12,13 @@ This tutorial will focus on command line usage based on Raspberry 3 with OSMC di
 Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracrypt-debianwindows/)
 
 1. Download:
-The newest version might be found here: [VeraCrypt - Downloads](https://veracrypt.codeplex.com/wikipage?title=Downloads)
+    The newest version might be found here: [VeraCrypt - Downloads](https://veracrypt.codeplex.com/wikipage?title=Downloads)
 
-```bash
-cd ~
-mkdir veracryptfiles
-cd veracryptfiles
-wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.19/+download/veracrypt-1.19-raspbian-setup.tar.bz2
+    ```bash
+    cd ~
+    mkdir veracryptfiles
+    cd veracryptfiles
+    wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.19/+download/veracrypt-1.19-raspbian-setup.tar.bz2
 ```
 
 2. Extract:
