@@ -3,8 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.copyright_name }}">
     <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}RaspberryPi, JS, Angular{% endif %}"">
+    <meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}RaspberryPi, JS, Angular{% endif %}">
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
