@@ -12,7 +12,6 @@ github_username: henioStraszny
 email_username: jacek.styrylski@gmail.com
 
 # Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
 google_tracking_id: UA-92553181-1
 
 # Build settings
