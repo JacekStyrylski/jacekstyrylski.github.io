@@ -14,7 +14,14 @@ If you'd like to use it with gui, there are some good tutorials on how to use it
 
 Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracrypt-debianwindows/)
 
-1. Download:
+1. Dependencies
+
+    ```bash
+    sudo apt-get update
+    sudo apt-get install libfuse-dev makeself libwxbase3.0-0
+    ```
+
+2. Download:
 
     The newest version might be found here: [VeraCrypt - Downloads](https://veracrypt.codeplex.com/wikipage?title=Downloads)
 
@@ -25,7 +32,7 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
     wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.19/+download/veracrypt-1.19-raspbian-setup.tar.bz2
     ```
 
-2. Extract:
+3. Extract:
 
     ```bash
     tar -vxjf ./veracrypt-1.19-raspbian-setup.tar.bz2
@@ -33,7 +40,7 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
     ./veracrypt-1.19-setup-console-armv7
     ```
 
-3. Install:
+4. Install:
 
     ```bash
     ./veracrypt-1.19-setup-console-armv7
@@ -45,7 +52,7 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
     > 4. Write `yes` and press `enter`
     > 5. Press `enter`
 
-4. Erase installation files:
+5. Erase installation files:
 
     ```bash
     rm -r veracryptfiles
@@ -90,7 +97,7 @@ Follow these steps:
     > 5. Press `enter` *(unless you want to use different hash algorithm)*.
     > 6. Press `enter` *(unless you want to use different file system)*
     > 7. Write your password and press `enter` *(it should be larger than 20 characters to block > against brute force techniques)*.
-    > 8. Press `enter` *([what is PIM]> (https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e)).
+    > 8. Press `enter` *(What is PIM: [https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e](https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e))*.
     > 9. Press `enter`.
     > 10. Write on keyboard at least 320 random characters and press `enter`.
 
@@ -118,3 +125,20 @@ After you stopped using encrypted volume, you should dismount it:
 ```bash
 varacrypt -d
 ```
+
+## Creating aliases
+
+If you wish, you can create handy aliases for mounting and dismounting your VeraCrypt volume:
+
+Mounting alias:
+```bash
+printf "\nalias storage=\"veracrypt /dev/sda /media/storage --pim=0 --keyfiles= --protect-hidden=no\"" >> .bashrc 
+```
+
+Unmounting alias:
+
+```bash
+printf "\nalias unstorage=\"veracrypt -d /dev/sda\"" >> .bashrc 
+```
+
+After adding aliases
