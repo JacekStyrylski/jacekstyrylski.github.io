@@ -44,15 +44,78 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
 
 4. Install:
 
+    Run installation script:
+
     ```bash
     ./veracrypt-1.19-setup-console-armv7
     ```
 
-    > 1. Press `1`
-    > 2. Press `Enter`
-    > 3. Press `q` (only if you already read license agreement)
-    > 4. Write `yes` and press `enter`
-    > 5. Press `enter`
+    Go according those steps:
+
+        
+    ```bash
+    VeraCrypt 1.19 Setup
+    ____________________
+    Installation options:
+    1) Install veracrypt_1.19_console_armv7.tar.gz
+    2) Extract package file veracrypt_1.19_console_armv7.tar.gz and place it to /tmp
+
+    To select, enter 1 or 2: '1'
+    ```
+    ```bash
+    Before you can use, extract, or install VeraCrypt, you must accept the
+    terms of the VeraCrypt License.
+    
+    Press Enter to display the license terms... 'Enter'
+    ```
+    ```bash
+    Press Enter or space bar to see the rest of the license.
+    
+    VeraCrypt License
+    Software distributed under this license is distributed on an AS
+    IS BASIS WITHOUT WARRANTIES OF ANY KIND. THE AUTHORS AND
+    DISTRIBUTORS OF THE SOFTWARE DISCLAIM ANY LIABILITY. ANYONE WHO
+    USES, COPIES, MODIFIES, OR (RE)DISTRIBUTES ANY PART OF THE
+    SOFTWARE IS, BY SUCH ACTION(S), ACCEPTING AND AGREEING TO BE
+    BOUND BY ALL TERMS AND CONDITIONS OF THIS LICENSE. IF YOU DO NOT
+    ACCEPT THEM, DO NOT USE, COPY, MODIFY, NOR (RE)DISTRIBUTE THE
+    SOFTWARE, NOR ANY PART(S) THEREOF.
+    
+    VeraCrypt is multi-licensed under Apache License 2.0 and
+    the TrueCrypt License version 3.0, a verbatim copy of both
+    licenses can be found below.
+    
+    : 'q'
+    ```
+    ```bash
+    Do you accept and agree to be bound by the license terms? (yes/no): 'yes'
+    ```
+    ```bash
+    Uninstalling VeraCrypt:
+    -----------------------
+    
+    To uninstall VeraCrypt, please run 'veracrypt-uninstall.sh'.
+    
+    Installing package...
+    [sudo] password for '[your user]':'*******'
+    ```
+    ```bash
+    usr/
+    usr/share/
+    usr/share/veracrypt/
+    usr/share/veracrypt/doc/
+    usr/share/veracrypt/doc/License.txt
+    usr/share/veracrypt/doc/VeraCrypt User Guide.pdf
+    usr/share/pixmaps/
+    usr/share/pixmaps/veracrypt.xpm
+    usr/share/applications/
+    usr/share/applications/veracrypt.desktop
+    usr/bin/
+    usr/bin/veracrypt
+    usr/bin/veracrypt-uninstall.sh
+    
+    Press Enter to exit... 'Enter'
+    ```
 
 5. Erase installation files:
 
@@ -86,7 +149,7 @@ Follow these steps:
 
 2. Create a volume:
 
-    *Assuming you've external drive connected and mounted already to `/media/storage`*.
+    *Assuming you've external drive connected and mounted already to `/media/storage` which is connected to device*.
 
     ```bash
     veracrypt -t -c
