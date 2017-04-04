@@ -11,7 +11,8 @@
         "favicons",
         "Favicon",
         "OSMC",
-        "VeraCrypt"
+        "VeraCrypt",
+        "Ext4"
     ],
     "documentTypes": [
         "markdown",

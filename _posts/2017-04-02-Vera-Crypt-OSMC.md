@@ -138,7 +138,7 @@ veracrypt --help
 
 ## Volume within a file
 
-Follow these steps:
+In order to create volume within a file, follow these steps:
 
 1. Create mounting point:
 
@@ -149,22 +149,118 @@ Follow these steps:
 
 2. Create a volume:
 
-    *Assuming you've external drive connected and mounted already to `/media/storage` which is connected to device*.
+    *Assuming you've external drive connected and mounted already to `/media/storage`*.
 
     ```bash
     veracrypt -t -c
     ```
 
-    > 1. Press `1` *(unless you need hidden volume)*.
-    > 2. Write `/media/storage/new-volume` press `enter`.
-    > 3. Write `500M` *(will create 500 M volume) press `enter`.
-    > 4. Press `enter` *(unless you want to use different encryption algorithm)*.
-    > 5. Press `enter` *(unless you want to use different hash algorithm)*.
-    > 6. Press `enter` *(unless you want to use different file system)*
-    > 7. Write your password and press `enter` *(it should be larger than 20 characters to block > against brute force techniques)*.
-    > 8. Press `enter` *(What is PIM: [https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e](https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e))*.
-    > 9. Press `enter`.
-    > 10. Write on keyboard at least 320 random characters and press `enter`.
+    Select volume type, hidden volumes provide even higher security, however for now, we will just create normal volume.
+
+    ```bash
+    Volume type:
+     1) Normal
+     2) Hidden
+    Select [1]: '1'
+    ```
+
+    Enter filename, within which volume will be created.
+
+    ```bash
+    Enter volume path:  '/media/Backup/vera-test-volume
+    ```
+
+    Define volume size. If you need 10 kilo, mega or giga bytes it will look as follows.
+
+    - 10K (10 Kilobytes)
+    - 10M (10 Megabytes)
+    - 10G (10 Gigabytes)
+
+    ```bash
+    Enter volume size (sizeK/size[M]/sizeG): '10M'
+    ```
+
+    Select encryption algorithm, people who tries to do brute force attack on encrypted volumes, usually assumes AES algorithm hence it is recommended to select different one.
+
+    ```bash
+    Encryption Algorithm:
+    1) AES
+    2) Serpent
+    3) Twofish
+    4) Camellia
+    5) Kuznyechik
+    6) AES(Twofish)
+    7) AES(Twofish(Serpent))
+    8) Serpent(AES)
+    9) Serpent(Twofish(AES))
+    10) Twofish(Serpent)
+    Select [1]: '3'
+    ``` 
+
+    Select hashing algorithm.
+
+    ```bash
+    Hash algorithm:
+     1) SHA-512
+     2) Whirlpool
+     3) SHA-256
+     4) Streebog
+    Select [1]: '1'
+    ```
+
+    Select file system, for simplicity it can be FAT but if you need file permission even Ext4 might be used.
+
+    ```bash
+    Filesystem:
+     1) None
+     2) FAT
+     3) Linux Ext2
+     4) Linux Ext3
+     5) Linux Ext4
+     6) NTFS
+     7) exFAT
+    Select [2]: '2' 
+    ```
+
+    Password selection, it is recommended to use password consisting of more than 20 alpha numeric characters, due to possibility of brute force attack.
+
+    ```bash
+    Enter password: '[your password]'
+    Re-enter password: '[your password]'
+    ```
+
+    PIM stands for Personal Iterations Multiplier. Explanation done by: [Mounir IDRASSI](https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e)
+
+    > It is a value that controls the number of iterations used by the header key derivation
+    > following the formulas:
+    >
+    > - For system encryption: Iterations = PIM x 2048
+    > - For non-system encryption and file containers: Iterations = 15000 + (PIM x 1000)
+    >
+    > If PIM value is high, iterations are also high and this implies a better security but a slower
+    > mounting/booting. 
+    > If PIM value is small, iterations count is also small and this implies quicker 
+    > mounting/booting but it brings a decreases security.
+
+    We will select default value so, just press `enter`.
+
+    ```bash
+    Enter PIM: 
+    ```
+
+    If you want to use keyfile instead of password, here you can define keyfile. We will not do that so again you can just press `enter`.
+
+    ```bash
+    Enter keyfile path [none]: 
+    ```
+
+    Here is the funny part, you need to type at least 320 random characters since this will be base for your encryption key.
+
+    ```bash
+    Please type at least 320 randomly chosen characters and then press Enter:
+    ```
+
+    That's it, now you need to wait, even hours (for about 500GB drive) for encryption to process.
 
 3. Mounting a volume:
 
