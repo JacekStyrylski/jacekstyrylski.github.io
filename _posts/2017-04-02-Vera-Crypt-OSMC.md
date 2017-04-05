@@ -172,9 +172,11 @@ In order to create volume within a file, follow these steps:
 
     Define volume size. If you need 10 kilo, mega or giga bytes it will look as follows.
 
-    - 10K (10 Kilobytes)
-    - 10M (10 Megabytes)
-    - 10G (10 Gigabytes)
+   - 10K (10 Kilobytes)
+   - 10M (10 Megabytes)
+   - 10G (10 Gigabytes)
+
+    We will use 10 Megabytes.
 
     ```bash
     Enter volume size (sizeK/size[M]/sizeG): '10M'
@@ -229,7 +231,7 @@ In order to create volume within a file, follow these steps:
     Re-enter password: '[your password]'
     ```
 
-    PIM stands for Personal Iterations Multiplier. Explanation done by: [Mounir IDRASSI](https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e)
+    PIM stands for Personal Iterations Multiplier.
 
     > It is a value that controls the number of iterations used by the header key derivation
     > following the formulas:
@@ -241,6 +243,9 @@ In order to create volume within a file, follow these steps:
     > mounting/booting. 
     > If PIM value is small, iterations count is also small and this implies quicker 
     > mounting/booting but it brings a decreases security.
+
+    *[Explanation done by Mounir IDRASSI.](https://sourceforge.net/p/veracrypt/discussion/general/thread/e51e51fe/#663e)*
+
 
     We will select default value so, just press `enter`.
 
@@ -264,14 +269,35 @@ In order to create volume within a file, follow these steps:
 
 3. Mounting a volume:
 
+    **Run following command:**
+
     ```bash
     veracrypt /media/storage/new-volume /media/vera-test
     ```
 
-    > 1. Enter password written in step 7 and press `enter`.
-    > 2. Press `enter`.
-    > 3. Press `enter`.
-    > 4. Press `enter`.
+    **Steps:**
+
+    ```bash
+    Enter password for /media/storage/new-volume: '[volume password]'
+    ```
+
+    Enter PIM but, if you've used default PIM value, just press `enter`.
+
+    ```bash
+    Enter PIM for /media/storage/new-volume:
+    ```
+
+    Enter keyfile, if you've used password you can just hit `enter`.
+
+    ```bash
+    Enter keyfile [none]:
+    ```
+
+    If you've created normal, not hidden volume, just hit `enter` again.
+
+    ```bash
+    Protect hidden volume (if any)? (y=Yes/n=No) [No]:
+    ```
 
     That's it, your volume should be visible in `/media/vera-test`.
 
@@ -302,4 +328,4 @@ Unmounting alias:
 printf "\nalias unstorage=\"veracrypt -d /dev/sda\"" >> .bashrc 
 ```
 
-After adding aliases
+After adding aliases you can call `storage` for mounting and `unstorage` for dismounting your volume.
