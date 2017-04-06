@@ -17,9 +17,19 @@ google_tracking_id: UA-92553181-1
 # Build settings
 # markdown: kramdown
 # highlighter: rouge
-# kramdown:
+#kramdown:
+#  syntax_highlighter: rouge
+#  syntax_highlighter_opts:
+#    css_class: 'highlight'
+#    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+#    span:
+#      line_numbers: false
+#    block:
+#      line_numbers: true
+#      start_line: 1 
+#
+#      kramdown.syntax_highlighter_opts.block.line_numbers = true
 #     input: GFM
-#     syntax_highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
