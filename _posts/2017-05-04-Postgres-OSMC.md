@@ -144,7 +144,7 @@ sudo apt-get install postgresql postgresql-contrib
     ```bash
     \q
 
-    psql -d testpi
+    psql -d testpi                                                      
     ```
 
 ## Summary
