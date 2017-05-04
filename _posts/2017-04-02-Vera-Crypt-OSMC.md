@@ -8,7 +8,7 @@ tags: VeraCrypt, encryption, OSMC, Raspberry Pi
 ---
 ![ss]({{site.url}}/img/posts/2017-04/veracrypt.jpg)
 
-If you'd like to use it with gui, there are some good tutorials on how to use it with GUI, for example this one:
+If you'd like to use VeraCrypt with GUI, there are some good tutorials on how to do that, for example this one:
 
 [http://www.linuxandubuntu.com/home/encrypt-data-in-linux-with-veracrypt-an-alternative-to-truecrypt](http://www.linuxandubuntu.com/home/encrypt-data-in-linux-with-veracrypt-an-alternative-to-truecrypt)
 
@@ -253,7 +253,7 @@ In order to create volume within a file, follow these steps:
     Enter PIM: 
     ```
 
-    If you want to use keyfile instead of password, here you can define keyfile. We will not do that so again you can just press `enter`.
+    If you want to use keyfile instead of password, here you can define keyfile. We will not do that, so again you can just press `enter`.
 
     ```bash
     Enter keyfile path [none]: 
@@ -265,7 +265,7 @@ In order to create volume within a file, follow these steps:
     Please type at least 320 randomly chosen characters and then press Enter:
     ```
 
-    That's it, now you need to wait, even hours (for about 500GB drive) for encryption to process.
+    That's it, now you need to wait for encryption to process. It might take even hours for 500GB drives.
 
 3. Mounting a volume:
 
@@ -299,9 +299,9 @@ In order to create volume within a file, follow these steps:
     Protect hidden volume (if any)? (y=Yes/n=No) [No]:
     ```
 
-    That's it, your volume should be visible in `/media/vera-test`.
+    That's it, your volume should be visible under `/media/vera-test`.
 
-## Encrypting complete parition/disk
+## Encrypting complete partition/disk
 
 If you need to encrypt entire drive, the only difference is that in step 2.2 instead of file name `/media/storage/new-volume` you need to put device file name like that: `/dev/sda`.
 

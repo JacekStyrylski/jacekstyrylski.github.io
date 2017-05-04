@@ -127,7 +127,7 @@ sudo apt-get install postgresql postgresql-contrib
 
 4. Create test database:
 
-    In order to create db first we will connect to postgres db which by default exists after installation. Now that we've created osmc role, we can simply log, even without sudo as follows:
+    In order to create db first we need to connect to postgres db which by default exists after installation. Now that we've created osmc role, we can simply log, even without sudo as follows:
 
     ```bash
     psql -d postgres                                                    
@@ -149,4 +149,4 @@ sudo apt-get install postgresql postgresql-contrib
 
 ## Summary
 
-After above configuration, it should be possible to use `psql` as db management tool by selected user. Probably, it would be a lot of easier to use Postgres out of the box if default db role would be root, unfortunately this is not the case. I hope that above tutorial will help some of you.
+After above configuration, it should be possible to use `psql` as db management tool by selected user. Probably, it would be much easier to use Postgres out of the box if default db role would be root, unfortunately this is not the case. I hope that above tutorial will help some of you.
