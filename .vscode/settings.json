@@ -1,4 +1,28 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "spellchecker.language": "en_US",
+    "spellchecker.ignoreWordsList": [
+        "blog",
+        "structurize",
+        "GitHub",
+        "Blog",
+        "Jkyll",
+        "Yaml",
+        "favicon",
+        "favicons",
+        "Favicon",
+        "OSMC",
+        "VeraCrypt",
+        "Ext4"
+    ],
+    "spellchecker.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "md"
+    ],
+    "spellchecker.ignoreRegExp": [],
+    "spellchecker.ignoreFileExtensions": [],
+    "spellchecker.checkInterval": 5000
 }
