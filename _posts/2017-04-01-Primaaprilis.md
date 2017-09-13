@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Blog on GitHub
-date: 2017-02-23 21:41
 ---
 
 ## title
