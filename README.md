@@ -6,5 +6,7 @@
 
 ```bash
 sudo apt-get install ruby-dev
-sudo gem install jekyll bundler
+sudo gem install github-pages
+jekyll serve --watch
+jekyll serve --watch --drafts
 ```
