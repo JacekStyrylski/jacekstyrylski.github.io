@@ -20,7 +20,7 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
 
     ```bash
     sudo apt-get update
-    sudo apt-get install libfuse-dev makeself libwxbase3.0-0
+    sudo apt-get install libfuse-dev makeself libwxbase3.0-0v5
     ```
 
 2. Download:
@@ -31,7 +31,7 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
     cd ~
     mkdir veracryptfiles
     cd veracryptfiles
-    wget -L -O veracrypt-1.19-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.19/+download/veracrypt-1.19-raspbian-setup.tar.bz2
+    wget -L -O veracrypt-1.21-raspbian-setup.tar.bz2 https://launchpad.net/veracrypt/trunk/1.21/+download/veracrypt-1.21-raspbian-setup.tar.bz2
     ```
 
 3. Extract:
@@ -39,7 +39,6 @@ Based on: [fredfire1](https://fredfire1.wordpress.com/2016/02/04/install-veracry
     ```bash
     tar -vxjf ./veracrypt-1.19-raspbian-setup.tar.bz2
     chmod +x veracrypt-1.19-setup-*
-    ./veracrypt-1.19-setup-console-armv7
     ```
 
 4. Install:
