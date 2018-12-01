@@ -2,11 +2,11 @@
 
 # Installation
 
-1. Ruby
+### Ruby
+Install Ruby (https://rubyinstaller.org/)[https://rubyinstaller.org/]
 
-```bash
-sudo apt-get install ruby-dev
-sudo gem install github-pages
-jekyll serve --watch
-jekyll serve --watch --drafts
+```
+gem install bundler (as admin)
+bundle install
+bundle jekyll serve --watch --drafts
 ```
