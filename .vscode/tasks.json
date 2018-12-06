@@ -24,7 +24,8 @@
             "args": [
                 "exec",
                 "jekyll",
-                "serve",
+				"serve",
+				"--watch",
                 "--drafts"
             ],
             "presentation": {
