@@ -41,7 +41,7 @@ What I really like in that tool is possibility to use templates to create a dock
 
 # Features
 
-All essential docker features are covered by portainer.io, it manage:
+All essential docker features are covered by portainer.io, it manages:
 
 - Stacks
 - Containers
