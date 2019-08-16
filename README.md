@@ -6,7 +6,7 @@
 Install Ruby (https://rubyinstaller.org/)[https://rubyinstaller.org/]
 
 ```
-gem install bundler (as admin)
+gem install jekyll bundler (as admin)
 bundle install
-bundle jekyll serve --watch --drafts
+bundle exec jekyll serve --watch --drafts
 ```
